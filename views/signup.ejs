@@ -1,0 +1,85 @@
+
+<html>
+<style>
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    select {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+  <body>
+  <form action="/signupsubmit" method="post">
+    <div>
+      <label for="firstname">First Name:</label>
+      <input type="text" id="firstname" name="firstname" required>
+    </div>
+    <div>
+      <label for="lastname">Last Name:</label>
+      <input type="text" id="lastname" name="lastname" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <label for="phone">Mobile:</label>
+      <input type="number" id="phone" name="phone" required>
+    </div>
+    <div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <button type="submit" value="submit">Submit</button>
+  </form>
+</body>
+  </html>

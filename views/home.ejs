@@ -1,0 +1,57 @@
+<html>
+<head>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-btn, .signup-btn {
+  width: 150px;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Music Player</h1>
+    <p>Login to access your music library</p>
+    <form action="/signup" method="post">
+    <div class="buttons">
+      <button class="signup-btn">Sign Up</button>
+    </div>
+  </form>
+  </div>
+</body>
+</html>

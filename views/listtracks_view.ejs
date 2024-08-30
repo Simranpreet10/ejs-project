@@ -1,0 +1,15 @@
+<html>
+    <div style="width:1200px" height:auto; min-height:500px; border:1px solid red;>
+
+        <table align="center">
+        <% for(let d of tracklist ) { %>
+        <tr>
+        <td><%=d.trackname%></td>
+        <td><a href="/edittracklist?tid=<%=d._id%>">Edit</a>
+        <a href="/deletetrack?tid=<%=d._id%>">Delete</a>
+        </td>
+        </tr>
+        <% } %>
+        </table>
+        </div>
+</html>

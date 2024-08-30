@@ -1,0 +1,15 @@
+<html>
+    <div style="width:1200px" height:auto; min-height:500px; border:1px solid red;>
+
+        <table align="center">
+        <% for(let d of playlist ) { %>
+        <tr>
+        <td><%=d.title%></td>
+        <td><a href="/editplaylist?pid=<%=d._id%>">Edit</a>
+        <a href="/deleteplaylist?pid=<%=d._id%>">Delete</a>
+        </td>
+        </tr>
+        <% } %>
+        </table>
+        </div>
+</html>
